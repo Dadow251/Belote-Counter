@@ -1,5 +1,6 @@
 package com.example.belotecounter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void createGame(View view) {
-        LogData("Création d'une nouvelle partie");
+        Intent intent = new Intent(this,CreateActivity.class);
+        startActivity(intent);
     }
 
 }

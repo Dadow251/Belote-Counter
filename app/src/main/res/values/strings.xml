@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Belote Counter</string>
+    <string name="nameA">Nom de l\'équipe A</string>
+    <string name="nameB">Nom de l\'équipe B</string>
 </resources>
