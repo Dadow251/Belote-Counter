@@ -2,4 +2,9 @@
     <string name="app_name">Belote Counter</string>
     <string name="nameA">Nom de l\'équipe A</string>
     <string name="nameB">Nom de l\'équipe B</string>
+    <string name="teamA">Équipe A</string>
+    <string name="teamB">Équipe B</string>
+    <string name="objective">Objectif</string>
+    <string name="obj501pts">501 pts</string>
+    <string name="obj1001pts">1001 pts</string>
 </resources>

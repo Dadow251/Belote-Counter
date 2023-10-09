@@ -20,11 +20,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewTeamA2"
+        android:id="@+id/textViewTeamB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Équipe B"
+        android:text="@string/teamB"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Objectif"
+        android:text="@string/objective"
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -73,7 +73,7 @@
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTeamA2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTeamB" />
 
     <RadioGroup
         android:id="@+id/radioButtonObjectiveOptions"
@@ -85,15 +85,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewTeamA3">
 
         <RadioButton
+            android:id="@+id/radioButtonObj501"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="501 pts"
+            android:text="@string/obj501pts"
             android:textSize="20sp" />
 
         <RadioButton
+            android:id="@+id/radioButtonObj1001"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1001 pts"
+            android:text="@string/obj1001pts"
             android:textSize="20sp" />
     </RadioGroup>
 
@@ -104,6 +106,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
         android:clickable="true"
+        android:onClick="goNext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/ic_media_play" />

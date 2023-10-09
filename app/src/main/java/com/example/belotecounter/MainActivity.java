@@ -16,11 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    void LogData(String data) {
-        Toast.makeText(MainActivity.this, data, Toast.LENGTH_SHORT).show();
-        Log.d("TAG", data);
-    }
-
     public void createGame(View view) {
         Intent intent = new Intent(this,CreateActivity.class);
         startActivity(intent);
